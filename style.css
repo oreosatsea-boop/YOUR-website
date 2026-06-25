@@ -1,0 +1,20 @@
+.bgs {
+    width: 100px;
+    height: 50px;
+}
+
+
+/* Default page background */
+body {
+  background-color: white;
+  transition: background-color 0.3s ease; /* Makes the transition smooth */
+}
+
+/* Background applied after clicking the button */
+.new-background-y {
+  background-color: rgb(224, 211, 88);
+}
+
+.new-background-p {
+  background-color: rgb(219, 119, 208);
+}
