@@ -8,7 +8,9 @@ agebox.remove();
 document.getElementById("submit").onclick = function(){
   username = document.getElementById("yourtext").value;
   document.getElementById("yourh1").textContent = `Much better, ${username}`;
-  document.getElementById("yourh2").textContent = 'Now those buttons down there choose the back ground of this whole thing btw! If you want it white then leave it ig, oh wait, your stuck here LOL! Now choose a damn color';
+  document.getElementById("yourh2").textContent = 'Now those buttons down there choose the back ground of this whole thing btw! If you want it white then leave it ig, oh wait, your stuck here LOL! Now CHOOSE A COLOR!! please :]';
+  document.getElementById("yourp").textContent = '';
+
 }
 
 const button = document.getElementById('yellowbg');
@@ -16,6 +18,7 @@ button.addEventListener('click', () => {
   document.body.classList.toggle('new-background-y');
   document.getElementById("yourh1").textContent = `Oh yeah, btw ${username}, I made it so you can only pick YELLOW to proceed.`;
   document.getElementById("yourh2").textContent = 'Sorry, maybe you can add your age now?? :c This is YOUR website after all. BTW this time press ENTER to continue';
+  document.getElementById("yourp").textContent = 'Once again, I have no idea what you put in ever unless you tell me irl or smth! Don be scared lol TvT';
   document.getElementById("label").textContent = 'Age:';
   
   inputBox.parentNode.insertBefore(agebox, inputBox);
@@ -27,6 +30,7 @@ button.addEventListener('click', () => {
       const age = agebox.value;
       document.getElementById("yourh1").textContent = `Wow, ${age} years old? Talk about UNCC, ${username}`;
       document.getElementById("yourh2").textContent = "Well we have gone through too much, sorry I ruined YOUR website! You can leave now this whole place is a mess :C. To delete this website press [Y]";
+        document.getElementById("yourp").textContent = '. . .';
       
       // Clear out the label text too so it doesn't float around alone
       document.getElementById("label").textContent = '';
